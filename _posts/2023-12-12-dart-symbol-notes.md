@@ -1,12 +1,9 @@
 ---
+layout: post
 title: Dart 语言中常见符号和语法详解
-author: chatgpt
 date: 2023-12-12 20:03:00 +0800
-categories: [Learn]
-tags: [dart]
-pin: true
-math: true
-mermaid: true
+categories: Programming
+tags: ["Dart"]
 ---
 
 Dart 是一种现代化的编程语言，广泛用于移动应用和 Web 开发。在 Dart 的开发中，你可能会遇到一些特殊的符号和语法，这些符号提供了便捷的方式来表达一些常见的操作。本文将深入解析一些常见的 Dart 符号和语法，帮助你更好地理解和编写 Dart 代码。
