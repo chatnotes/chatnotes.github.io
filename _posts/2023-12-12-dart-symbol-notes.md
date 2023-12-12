@@ -49,10 +49,21 @@ print(nullableText?.length);
 // 空合并运算符
 String nonNullableText = nullableText ?? 'Default Value';
 ```
+## 4. **空安全调用（null-aware access）：**
+   - 使用 `?.` 可以安全地调用对象的属性或方法，如果对象为 `null`，则整个表达式的值为 `null`，而不会抛出空指针异常。
 
-问号 `?` 在 Dart 中是一个非常重要的符号，它使得代码更具健壮性，能够更好地处理可能的空值情况。
+   ```dart
+   String? possiblyNullString = someObject?.stringValue;
+   ```
 
-## 4. 百分号 `%`：取余运算
+## 5. **空合并运算符（null-aware cascade）：**
+   - 使用 `??` 可以提供默认值，如果左侧的表达式为 `null`，则使用右侧的默认值。
+
+   ```dart
+   String? nullableString = possiblyNullString ?? 'Default Value';
+   ```
+
+## 6. 百分号 `%`：取余运算
 
 百分号 `%` 是 Dart 中的取余运算符，用于计算两个操作数相除的余数。以下是一个简单的例子：
 
@@ -65,7 +76,7 @@ void main() {
 
 在这个例子中，`10 % 3` 的结果是 `1`，表示 10 除以 3 的余数。
 
-## 5. 美元符号 `$`：字符串插值
+## 7. 美元符号 `$`：字符串插值
 
 美元符号 `$` 在 Dart 中用于字符串插值，允许在字符串中引用变量或表达式的值。以下是一些示例：
 
