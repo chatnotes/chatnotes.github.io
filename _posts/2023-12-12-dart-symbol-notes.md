@@ -1,3 +1,13 @@
+---
+title: Dart 语言中常见符号和语法详解
+author: cotes
+date: 2023-12-12 20:03:00 +0800
+categories: [Learn]
+tags: [dart]
+pin: true
+math: true
+mermaid: true
+---
 # Dart 语言中常见符号和语法详解
 
 Dart 是一种现代化的编程语言，广泛用于移动应用和 Web 开发。在 Dart 的开发中，你可能会遇到一些特殊的符号和语法，这些符号提供了便捷的方式来表达一些常见的操作。本文将深入解析一些常见的 Dart 符号和语法，帮助你更好地理解和编写 Dart 代码。
@@ -36,7 +46,15 @@ print(nonNullableString.length);
 
 在这个例子中，我们使用了非空断言 `!` 来告诉编译器 `nullableString` 不会为空。
 
-## 3. 问号 `?`：空安全相关
+## 3. **加叹号和加点 `!.`：非空调用**
+   - 用于在 Dart 空安全语法中调用可能为空的对象的属性或方法，同时告诉编译器在此处确保对象不为空。
+
+   ```dart
+   String? nullableText = 'Flutter';
+   print(nullableText!.length); // 非空调用，告诉编译器对象不为空
+   ```
+
+## 4. 问号 `?`：空安全相关
 
 问号 `?` 是 Dart 中空安全特性的一部分，主要用于处理可能为空的变量。它有多种用法，包括可空类型声明、非空断言、条件表达式等。以下是一些示例：
 
@@ -49,18 +67,11 @@ print(nullableText?.length);
 // 空合并运算符
 String nonNullableText = nullableText ?? 'Default Value';
 ```
-## 4. **空安全调用（null-aware access）：**
+## 5. **空安全调用（null-aware access）：**
    - 使用 `?.` 可以安全地调用对象的属性或方法，如果对象为 `null`，则整个表达式的值为 `null`，而不会抛出空指针异常。
 
    ```dart
    String? possiblyNullString = someObject?.stringValue;
-   ```
-
-## 5. **空合并运算符（null-aware cascade）：**
-   - 使用 `??` 可以提供默认值，如果左侧的表达式为 `null`，则使用右侧的默认值。
-
-   ```dart
-   String? nullableString = possiblyNullString ?? 'Default Value';
    ```
 
 ## 6. 百分号 `%`：取余运算
