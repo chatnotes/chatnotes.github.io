@@ -45,7 +45,7 @@ print(nonNullableString.length);
 
 在这个例子中，我们使用了非空断言 `!` 来告诉编译器 `nullableString` 不会为空。
 
-## 3. **加叹号和加点 `!.`：非空调用**
+## 3. 加叹号和加点 `!.`：非空调用
    - 用于在 Dart 空安全语法中调用可能为空的对象的属性或方法，同时告诉编译器在此处确保对象不为空。
 
    ```dart
@@ -67,25 +67,12 @@ print(nullableText?.length);
 String nonNullableText = nullableText ?? 'Default Value';
 ```
 
-## 5. **空安全调用（null-aware access）：**
+## 5. 问号加点 ?.
    - 使用 `?.` 可以安全地调用对象的属性或方法，如果对象为 `null`，则整个表达式的值为 `null`，而不会抛出空指针异常。
 
    ```dart
    String? possiblyNullString = someObject?.stringValue;
    ```
-
-## 6. 百分号 `%`：取余运算
-
-百分号 `%` 是 Dart 中的取余运算符，用于计算两个操作数相除的余数。以下是一个简单的例子：
-
-```dart
-void main() {
-  int result = 10 % 3; // 10除以3的余数
-  print(result);      // 输出: 1
-}
-```
-
-在这个例子中，`10 % 3` 的结果是 `1`，表示 10 除以 3 的余数。
 
 ## 7. 美元符号 `$`：字符串插值
 
@@ -103,3 +90,9 @@ print('The sum of $x and $y is ${x + y}.');
 美元符号 `$` 使得在字符串中引用变量或表达式的值变得更加简便，提高了代码的可读性。
 
 通过深入理解这些 Dart 符号和语法，你将更好地掌握 Dart 语言的特性，提高在 Dart 中的编程效率。希望本文对你理解 Dart 语言中的常见符号有所帮助。如果有任何问题或需要进一步的解释，请随时提问。 Happy coding!
+
+
+## Reference
+
+* [Dart Operators](https://dart.dev/language/operators)
+* [Dart Class](https://dart.dev/language/classes)
